@@ -17,29 +17,36 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Tech Stack
 
-React + Vite
-Zustand
-React-PDF / PDF.js
-Zod
-Inline CSS styling
+- React + Vite
+- Zustand
+- React-PDF / PDF.js
+- Zod
+- Inline CSS styling
 
-# # Setup Instructions
+## Setup Instructions
 
 1. Clone the repository
-   git clone <your-repo-url>
-   cd pdf-ai-form
-2. Install dependencies
-   npm install --legacy-peer-deps
-3. Start development server
-   npm run dev
-4. Open browser
-   http://localhost:5173
 
-# # Approach
+- git clone https://github.com/banumathi15/Cams_PdfMapper.git
+- cd pdf-ai-form
+
+2. Install dependencies
+
+- npm install --legacy-peer-deps
+
+3. Start development server
+
+- npm run dev
+
+4. Open browser
+
+- http://localhost:5173
+
+## Approach
 
 The application is divided into two synchronized panels:
 
-# Left Panel: PDF Viewer
+## Left Panel: PDF Viewer
 
 The PDF is rendered using react-pdf.
 
@@ -47,14 +54,14 @@ An overlay layer is positioned on top of the PDF using absolute positioning. Eac
 
 When a form field is focused, the corresponding overlay region on the PDF is highlighted.
 
-# Right Panel – Dynamic Form
+## Right Panel – Dynamic Form
 
 The form UI is dynamically generated from a JSON schema (mockSchema.js).
 
-# # State Management Strategy
+## State Management Strategy
 
 Global state is managed using Zustand.
 
-# # Form Validation
+## Form Validation
 
 Validation is implemented using Zod.
